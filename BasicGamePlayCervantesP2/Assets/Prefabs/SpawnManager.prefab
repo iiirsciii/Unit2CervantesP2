@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7053957860077129691}
   - component: {fileID: 5635163296139817868}
+  - component: {fileID: -4338451746956975056}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -48,4 +49,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  animalIndex: 0
+--- !u!114 &-4338451746956975056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243876473584132434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe244a024538fd4b963fb51a2e136f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
