@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float zMin;
     public float zMax;
     public float verticalInput;
+    public Transform projectileSpawnPoint; 
 
     // Start is called before the first frame update
     void Start()
@@ -57,5 +58,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(projectilePrefabs, transform.position, projectilePrefabs.transform.rotation);
         }
+        Instantiate(projectilePrefabs, projectileSpawnPoint.position,
+            projectilePrefabs.transform.rotation);
     }
 }
