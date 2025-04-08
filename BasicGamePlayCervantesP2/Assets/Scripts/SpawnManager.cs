@@ -18,7 +18,7 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
         InvokeRepeating("SpawnRightAnimal", startDelay, spawnInterval);
-        InvokeRepeating("SpawnAnimal", startDelay, spawnInterval);
+        InvokeRepeating("SpawnLeftAnimal", startDelay, spawnInterval);
     }
 
     // Update is called once per frame
@@ -45,7 +45,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnRightAnimal()
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPos = new Vector3(-sideSpawnx, 0, Random.Range(sideSpawnMinZ,
+        Vector3 spawnPos = new Vector3(sideSpawnx, 0, Random.Range(sideSpawnMinZ,
      sideSpawnMaxZ));
         Vector3 rotation = new Vector3(0, -90, 0);
         Instantiate(animalPrefabs[animalIndex], spawnPos, Quaternion.Euler(rotation));
